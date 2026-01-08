@@ -6,4 +6,4 @@ RUN swift package resolve
 COPY . .
 RUN swift build --configuration release -c release
 EXPOSE 8080
-CMD ./.build/release/Run
+CMD ./.build/release/ReleaseInformerBot
