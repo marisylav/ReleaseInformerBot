@@ -5,5 +5,5 @@ COPY Package.swift Package.resolved ./
 RUN swift package resolve
 COPY . .
 RUN swift build --configuration release -c release
-EXPOSE 8080
+ENV PORT=8080
 CMD ./.build/release/ReleaseInformerBot
